@@ -1,10 +1,10 @@
 const products = [
-  { id: 1, name: 'Sauce Labs Backpack', price: 29.99, color: '#8b5cf6' },
-  { id: 2, name: 'Sauce Labs Bike Light', price: 9.99, color: '#f59e0b' },
-  { id: 3, name: 'Sauce Labs Bolt T-Shirt', price: 15.99, color: '#ef4444' },
-  { id: 4, name: 'Sauce Labs Fleece Jacket', price: 49.99, color: '#3b82f6' },
-  { id: 5, name: 'Sauce Labs Onesie', price: 7.99, color: '#ec4899' },
-  { id: 6, name: 'Test.allTheThings() T-Shirt (Red)', price: 15.99, color: '#10b981' }
+  { id: 1, name: 'Sauce Labs Backpack', price: 29.99, image: 'img/mochila.jpeg' },
+  { id: 2, name: 'Sauce Labs Bike Light', price: 9.99, image: 'img/foco.jpeg' },
+  { id: 3, name: 'Sauce Labs Bolt T-Shirt', price: 15.99, image: 'img/camisa-negra.jpeg' },
+  { id: 4, name: 'Sauce Labs Fleece Jacket', price: 49.99, image: 'img/chaqueta.jpeg' },
+  { id: 5, name: 'Sauce Labs Onesie', price: 7.99, image: 'img/mameluco.jpeg' },
+  { id: 6, name: 'Test.allTheThings() T-Shirt (Red)', price: 15.99, image: 'img/camisa-roja.jpeg' }
 ];
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -19,7 +19,7 @@ function renderProducts(list) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.innerHTML = `
-      <div class="product-image" style="background-color: ${product.color}"></div>
+      <img class="product-image" src="${product.image}" alt="${product.name}">
       <p class="product-name">${product.name}</p>
       <p class="product-price">$${product.price.toFixed(2)}</p>
       <button class="cart-btn ${inCart ? 'remove' : 'add'}" data-id="${product.id}">
