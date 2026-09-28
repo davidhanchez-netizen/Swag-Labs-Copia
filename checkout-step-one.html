@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Labs - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inventory-body">
+
+  <header class="app-header">
+    <a href="cart.html" class="back-btn">&larr;</a>
+    <h1 class="app-logo">Swag Labs</h1>
+  </header>
+
+  <div class="checkout-subheader">
+    <span>Checkout: Your Information</span>
+  </div>
+
+  <main class="checkout-form-container">
+    <form id="checkoutForm" class="checkout-form">
+      <div class="input-group">
+        <input type="text" id="firstName" placeholder="First Name">
+      </div>
+      <div class="input-group">
+        <input type="text" id="lastName" placeholder="Last Name">
+      </div>
+      <div class="input-group">
+        <input type="text" id="postalCode" placeholder="Zip/Postal Code">
+      </div>
+      <p id="checkoutError" class="error-message"></p>
+      <div class="checkout-actions">
+        <a href="cart.html" class="btn-secondary">Cancel</a>
+        <button type="submit" class="btn-primary">Continue</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

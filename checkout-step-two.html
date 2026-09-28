@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Labs - Checkout Overview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inventory-body">
+
+  <header class="app-header">
+    <a href="checkout-step-one.html" class="back-btn">&larr;</a>
+    <h1 class="app-logo">Swag Labs</h1>
+  </header>
+
+  <div class="checkout-subheader">
+    <span>Checkout: Overview</span>
+  </div>
+
+  <div class="cart-subheader">
+    <span>QTY</span>
+    <span>DESCRIPTION</span>
+  </div>
+
+  <main class="cart-list" id="overviewList">
+    <!-- Se llena con JS -->
+  </main>
+
+  <section class="checkout-summary">
+    <p class="summary-line"><strong>Payment Information:</strong> SauceCard #31337</p>
+    <p class="summary-line"><strong>Shipping Information:</strong> Free Pony Express Delivery!</p>
+    <p class="summary-line"><strong>Item total:</strong> $<span id="itemTotal">0.00</span></p>
+    <p class="summary-line"><strong>Tax (8%):</strong> $<span id="taxTotal">0.00</span></p>
+    <p class="summary-line total-line"><strong>Total:</strong> $<span id="grandTotal">0.00</span></p>
+  </section>
+
+  <div class="checkout-actions">
+    <a href="cart.html" class="btn-secondary">Cancel</a>
+    <a href="checkout-complete.html" class="btn-primary" id="finishBtn">Finish</a>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
