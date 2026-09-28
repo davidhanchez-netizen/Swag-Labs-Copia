@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h1 class="login-logo">Swag Labs</h1>
+
+      <form id="loginForm" class="login-form">
+        <div class="input-group">
+          <input type="text" id="username" placeholder="Username" autocomplete="off">
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" autocomplete="off">
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+    </div>
+
+    <div class="credentials-box">
+      <div class="credentials-column">
+        <h3>Accepted usernames are:</h3>
+        <p>standard_user</p>
+        <p>locked_out_user</p>
+        <p>problem_user</p>
+        <p>performance_glitch_user</p>
+        <p>error_user</p>
+        <p>visual_user</p>
+      </div>
+      <div class="credentials-column">
+        <h3>Password for all users:</h3>
+        <p>secret_sauce</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
