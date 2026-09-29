@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Labs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dynamic.css">
+</head>
+<body class="inventory-body" data-page="spinner">
+
+  <header class="app-header">
+    <button class="menu-btn" id="menuBtn">&#9776;</button>
+    <h1 class="app-logo">Swag Labs</h1>
+    <a href="cart.html" class="cart-icon">
+      🛒<span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </header>
+
+  <nav class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <button id="closeMenuBtn">&times;</button>
+    </div>
+    <a href="inventory.html">All Items</a>
+    <button class="menu-dropdown-toggle" id="catalogToggle">Dynamic Catalog <span class="arrow">&#9662;</span></button>
+    <div class="submenu" id="catalogSubmenu">
+      <a href="lazy-load.html">Lazy Load</a>
+      <a href="spinner.html">Spinner</a>
+      <a href="slider.html">Slider</a>
+    </div>
+    <a href="#">About</a>
+    <a href="#" id="logoutBtn">Logout</a>
+    <a href="#" id="resetBtn">Reset App State</a>
+  </nav>
+
+  <div class="subheader">
+    <span class="page-title">Spinner</span>
+    <button class="reload-btn" id="reloadBtn">Recargar</button>
+  </div>
+
+  <div class="spinner-container" id="spinnerBox">
+    <div class="spinner" id="spinner"></div>
+    <p class="spinner-text">Cargando productos...</p>
+  </div>
+
+  <main class="inventory-grid hidden" id="spinnerGrid"></main>
+
+  <script src="dynamic.js"></script>
+  <script src="menu-dropdown.js"></script>
+</body>
+</html>

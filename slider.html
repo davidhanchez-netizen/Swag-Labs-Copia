@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Labs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dynamic.css">
+</head>
+<body class="inventory-body" data-page="slider">
+
+  <header class="app-header">
+    <button class="menu-btn" id="menuBtn">&#9776;</button>
+    <h1 class="app-logo">Swag Labs</h1>
+    <a href="cart.html" class="cart-icon">
+      🛒<span class="cart-badge" id="cartBadge">0</span>
+    </a>
+  </header>
+
+  <nav class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <button id="closeMenuBtn">&times;</button>
+    </div>
+    <a href="inventory.html">All Items</a>
+    <button class="menu-dropdown-toggle" id="catalogToggle">Dynamic Catalog <span class="arrow">&#9662;</span></button>
+    <div class="submenu" id="catalogSubmenu">
+      <a href="lazy-load.html">Lazy Load</a>
+      <a href="spinner.html">Spinner</a>
+      <a href="slider.html">Slider</a>
+    </div>
+    <a href="#">About</a>
+    <a href="#" id="logoutBtn">Logout</a>
+    <a href="#" id="resetBtn">Reset App State</a>
+  </nav>
+
+  <div class="subheader">
+    <span class="page-title">Slider</span>
+  </div>
+
+  <section class="slider">
+    <div class="slider-viewport">
+      <div class="slider-track" id="sliderTrack"></div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-arrow" id="sliderPrev" aria-label="Anterior">&#8249;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-arrow" id="sliderNext" aria-label="Siguiente">&#8250;</button>
+    </div>
+  </section>
+
+  <script src="dynamic.js"></script>
+  <script src="menu-dropdown.js"></script>
+</body>
+</html>
